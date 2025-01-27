@@ -44,8 +44,8 @@ btn.addEventListener("click", async () => {
 const weatherData = async (key: string, city: string): Promise<object> => {
   const res: Response = await fetch(
     city !== ""
-      ? `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`
-      : `http://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${long}&aqi=no`
+      ? `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`
+      : `https://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${long}&aqi=no`
   );
   const data: Response = await res.json();
   return data;

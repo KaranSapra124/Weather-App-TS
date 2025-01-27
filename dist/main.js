@@ -37,8 +37,8 @@ btn.addEventListener("click", async () => {
 // Fetch Weather
 const weatherData = async (key, city) => {
     const res = await fetch(city !== ""
-        ? `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`
-        : `http://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${long}&aqi=no`);
+        ? `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`
+        : `https://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${long}&aqi=no`);
     const data = await res.json();
     return data;
 };
