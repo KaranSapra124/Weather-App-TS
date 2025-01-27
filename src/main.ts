@@ -65,7 +65,7 @@ const displayWeather = (location: object, current: object) => {
     <img src="${current.condition.icon}" alt="${current.condition.text}" class="w-32 mb-4" />
    <div>
    <h2 class="text-5xl max-[600px]:text-sm max-[600px]:font-extrabold font-light text-blue-600 mb-2">${current.temp_c}°C</h2>
-<p class="text-xl max-[600px]:text-xs max-[600px]:font-bold font-light text-blue-600 mb-2">${location.name},${location.region}</p>
+<p class="text-xl max-[600px]:text-xs max-[600px]:font-bold font-medium my-4 text-blue-600 mb-2">${location.name},${location.region}</p>
    <h1 class="text-xl max-[600px]:text-xs font-semibold text-gray-800 mb-2">${current.condition.text}</h1>
     <p class="text-gray-500 max-[600px]:text-sm">Humidity: ${current.humidity}%</p>
    </div>
